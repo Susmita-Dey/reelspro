@@ -33,6 +33,7 @@ export async function POST(request: NextRequest) {
       { message: "User registered successfully!" },
       { status: 201 }
     );
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to register User!" },
